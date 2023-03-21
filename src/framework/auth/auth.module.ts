@@ -4,15 +4,6 @@ import { RouterModule } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 import { HttpRequest } from '@angular/common/http';
 
-import {
-  NbAlertModule,
-  NbButtonModule,
-  NbCardModule,
-  NbCheckboxModule,
-  NbIconModule,
-  NbInputModule,
-  NbLayoutModule,
-} from '@nebular/theme';
 
 import { NbAuthService } from './services/auth.service';
 import { NbAuthSimpleToken, NbAuthTokenClass } from './services/token/token';
@@ -80,15 +71,8 @@ export function nbNoOpInterceptorFilter(req: HttpRequest<any>): boolean {
 @NgModule({
   imports: [
     CommonModule,
-    NbLayoutModule,
-    NbCardModule,
-    NbCheckboxModule,
-    NbAlertModule,
-    NbInputModule,
-    NbButtonModule,
     RouterModule,
     FormsModule,
-    NbIconModule,
   ],
   declarations: [
     NbAuthComponent,
